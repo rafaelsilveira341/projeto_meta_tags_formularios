@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!--
+        META TAGS
+        Meta tags são elementos colocados dentro do <head> para fornecer
+        informações ao navegador, mecanismos de busca e outros serviços.
+
+        PARTE A
+    -->
+
+    <!-- charset: define a codificação de caracteres utilizada pelo documento. -->
+    <meta charset="UTF-8">
+
+    <!-- viewport: adapta a largura da página à largura da tela do dispositivo. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- description: fornece uma descrição resumida da página. -->
+    <meta name="description" content="Exemplos acadêmicos de meta tags HTML.">
+
+    <!-- author: informa o autor ou responsável pelo documento. -->
+    <meta name="author" content="Aluno">
+
+    <!--
+        Open Graph:
+        As propriedades og:* são utilizadas para definir como uma página
+        pode ser apresentada quando compartilhada em redes sociais e outros
+        serviços que suportam Open Graph.
+    -->
+
+    <!-- og:title: título apresentado no compartilhamento. -->
+    <meta property="og:title" content="Projeto de Meta Tags HTML">
+
+    <!-- og:description: descrição apresentada no compartilhamento. -->
+    <meta property="og:description" content="Exemplos de utilização de meta tags HTML.">
+
+    <!-- og:image: imagem utilizada na prévia do compartilhamento. -->
+    <meta property="og:image" content="https://via.placeholder.com/1200x630.png?text=Projeto+HTML">
+
+    <!-- og:url: URL oficial/canônica utilizada no compartilhamento. -->
+    <meta property="og:url" content="https://exemplo.com/projeto">
+
+    <!--
+        PARTE B
+
+        referrer:
+        Controla quais informações de referência (referrer) podem ser enviadas
+        quando o usuário navega para outra página.
+    -->
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+
+    <!--
+        content-security-policy:
+        Define regras de segurança para controlar quais recursos a página
+        pode carregar. A política pode ser enviada por HTTP e também pode
+        ser declarada com meta http-equiv.
+        O exemplo abaixo é propositalmente simples para demonstração.
+    -->
+    <meta http-equiv="Content-Security-Policy"
+          content="default-src 'self'; img-src 'self' https://via.placeholder.com;">
+
+    <!--
+        robots:
+        Informa aos mecanismos de busca como os robôs podem tratar a página.
+        O exemplo permite indexação e acompanhamento de links.
+    -->
+    <meta name="robots" content="index, follow">
+
+    <!--
+        keywords:
+        Antiga forma de indicar palavras-chave para mecanismos de busca.
+        Atualmente, os principais buscadores não utilizam esta meta tag
+        como fator principal de classificação.
+    -->
+    <meta name="keywords" content="HTML, CSS, formulário, meta tags">
+
+    <!--
+        theme-color:
+        Sugere uma cor para elementos da interface do navegador em dispositivos
+        e navegadores compatíveis.
+    -->
+    <meta name="theme-color" content="#ffffff">
+
+    <!--
+        color-scheme:
+        Informa que a página suporta determinados esquemas de cores.
+        Neste exemplo, a página declara suporte a claro e escuro.
+    -->
+    <meta name="color-scheme" content="light dark">
+
+    <!--
+        favicon:
+        Não é uma meta tag. É um elemento <link> usado para indicar o ícone
+        associado à página.
+        O arquivo favicon.ico deve existir na mesma pasta deste HTML.
+    -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <title>Meta Tags HTML</title>
+</head>
+<body>
+    <!--
+        EXPLICAÇÕES E EXEMPLOS
+
+        1. charset
+        Função: define a codificação dos caracteres.
+        Exemplo:
+        <meta charset="UTF-8">
+
+        2. viewport
+        Função: melhora a adaptação da página para celulares e tablets.
+        Exemplo:
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        3. description
+        Função: fornece uma descrição da página.
+        Exemplo:
+        <meta name="description" content="Descrição da página">
+
+        4. author
+        Função: identifica o autor.
+        Exemplo:
+        <meta name="author" content="Nome do autor">
+
+        5. og:title
+        Função: define o título usado na prévia de compartilhamento.
+        Exemplo:
+        <meta property="og:title" content="Título">
+
+        6. og:description
+        Função: define a descrição da prévia.
+        Exemplo:
+        <meta property="og:description" content="Descrição">
+
+        7. og:image
+        Função: define a imagem da prévia.
+        Exemplo:
+        <meta property="og:image" content="https://exemplo.com/imagem.jpg">
+
+        8. og:url
+        Função: informa a URL associada ao conteúdo.
+        Exemplo:
+        <meta property="og:url" content="https://exemplo.com">
+
+        9. referrer
+        Função: controla o envio de informações de referência.
+        Exemplo:
+        <meta name="referrer" content="strict-origin-when-cross-origin">
+
+        10. content-security-policy
+        Função: estabelece regras para os recursos que a página pode carregar.
+        Exemplo:
+        <meta http-equiv="Content-Security-Policy"
+              content="default-src 'self'">
+
+        11. robots
+        Função: orienta robôs de mecanismos de busca.
+        Exemplo:
+        <meta name="robots" content="index, follow">
+
+        12. keywords
+        Função: registra palavras-chave. É uma técnica histórica e atualmente
+        tem pouca ou nenhuma relevância para os principais buscadores.
+        Exemplo:
+        <meta name="keywords" content="HTML, CSS">
+
+        13. theme-color
+        Função: sugere a cor do tema da interface do navegador.
+        Exemplo:
+        <meta name="theme-color" content="#ffffff">
+
+        14. color-scheme
+        Função: informa esquemas de cores suportados.
+        Exemplo:
+        <meta name="color-scheme" content="light dark">
+
+        15. favicon
+        Função: define o ícone da página.
+        Exemplo:
+        <link rel="icon" href="favicon.ico">
+    -->
+
+    <h1>Meta Tags HTML</h1>
+    <p>Esta página contém exemplos e explicações das partes A e B da atividade.</p>
+
+    <h2>Exemplo visual</h2>
+    <p>As meta tags normalmente não aparecem diretamente no conteúdo da página.</p>
+
+    <p><a href="index.html">Voltar para o início</a></p>
+</body>
+</html>

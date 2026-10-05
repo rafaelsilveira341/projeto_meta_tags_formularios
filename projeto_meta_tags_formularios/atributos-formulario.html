@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atributos de Formulário</title>
+</head>
+<body>
+    <!--
+        PARTE E - ATRIBUTOS DE FORMULÁRIO
+
+        ATRIBUTOS DO ELEMENTO <form>:
+        action, target, method e autocomplete.
+
+        ATRIBUTOS DE ENTRADA:
+        value, readonly, disabled, size, maxlength, min, max, multiple,
+        placeholder, required, autofocus e autocomplete.
+    -->
+
+    <h1>Atributos de Formulário HTML</h1>
+
+    <!--
+        action:
+        Define para qual endereço os dados do formulário serão enviados.
+
+        target:
+        Define onde a resposta da submissão será aberta.
+
+        method:
+        Define o método HTTP usado para enviar os dados.
+        GET coloca os dados na URL; POST envia os dados no corpo da requisição.
+
+        autocomplete:
+        Controla se o navegador pode sugerir/preencher informações
+        anteriormente fornecidas pelo usuário.
+    -->
+    <form action="#" target="_self" method="get" autocomplete="on">
+
+        <!--
+            value:
+            Define um valor inicial para o campo.
+        -->
+        <label for="valor">value:</label>
+        <input type="text" id="valor" name="valor" value="Valor inicial">
+        <br><br>
+
+        <!--
+            readonly:
+            Deixa o valor visível e não editável pelo usuário.
+            O valor pode continuar sendo enviado pelo formulário.
+        -->
+        <label for="somenteLeitura">readonly:</label>
+        <input type="text" id="somenteLeitura" name="somenteLeitura"
+               value="Não pode ser editado" readonly>
+        <br><br>
+
+        <!--
+            disabled:
+            Desativa o campo.
+            Campos disabled normalmente não são enviados na submissão.
+        -->
+        <label for="desabilitado">disabled:</label>
+        <input type="text" id="desabilitado" name="desabilitado"
+               value="Campo desabilitado" disabled>
+        <br><br>
+
+        <!--
+            size:
+            Define a largura visual aproximada do campo de texto
+            em quantidade de caracteres.
+        -->
+        <label for="tamanho">size:</label>
+        <input type="text" id="tamanho" name="tamanho" size="30">
+        <br><br>
+
+        <!--
+            maxlength:
+            Define a quantidade máxima de caracteres permitida.
+        -->
+        <label for="maximoCaracteres">maxlength:</label>
+        <input type="text" id="maximoCaracteres" name="maximoCaracteres"
+               maxlength="10" placeholder="Máximo 10 caracteres">
+        <br><br>
+
+        <!--
+            min e max:
+            Definem, respectivamente, o menor e o maior valor aceito
+            por determinados tipos de entrada.
+        -->
+        <label for="numero">min e max:</label>
+        <input type="number" id="numero" name="numero" min="1" max="100">
+        <br><br>
+
+        <!--
+            multiple:
+            Permite selecionar mais de um valor quando suportado pelo tipo
+            de campo, como file e email.
+        -->
+        <label for="arquivos">multiple:</label>
+        <input type="file" id="arquivos" name="arquivos"
+               multiple>
+        <br><br>
+
+        <!--
+            placeholder:
+            Exibe uma dica no campo enquanto ele estiver vazio.
+        -->
+        <label for="nome">placeholder:</label>
+        <input type="text" id="nome" name="nome"
+               placeholder="Digite seu nome">
+        <br><br>
+
+        <!--
+            required:
+            Torna o preenchimento obrigatório antes do envio do formulário.
+        -->
+        <label for="obrigatorio">required:</label>
+        <input type="email" id="obrigatorio" name="obrigatorio"
+               placeholder="E-mail obrigatório" required>
+        <br><br>
+
+        <!--
+            autofocus:
+            Solicita que o navegador coloque o foco neste campo
+            quando a página for carregada.
+        -->
+        <label for="foco">autofocus:</label>
+        <input type="text" id="foco" name="foco"
+               placeholder="Campo com foco automático" autofocus>
+        <br><br>
+
+        <!--
+            autocomplete:
+            Pode ser usado no formulário ou em campos individuais para
+            controlar o preenchimento automático do navegador.
+        -->
+        <label for="cidade">autocomplete:</label>
+        <input type="text" id="cidade" name="cidade"
+               autocomplete="address-level2"
+               placeholder="Digite sua cidade">
+        <br><br>
+
+        <button type="submit">Enviar formulário</button>
+        <button type="reset">Limpar</button>
+    </form>
+
+    <h2>Resumo dos atributos</h2>
+    <table border="1" cellpadding="8">
+        <tr>
+            <th>Atributo</th>
+            <th>Função</th>
+        </tr>
+        <tr><td>action</td><td>Define o destino do envio.</td></tr>
+        <tr><td>target</td><td>Define onde abrir a resposta.</td></tr>
+        <tr><td>method</td><td>Define GET, POST etc.</td></tr>
+        <tr><td>autocomplete</td><td>Controla sugestões/preenchimento automático.</td></tr>
+        <tr><td>value</td><td>Define valor inicial.</td></tr>
+        <tr><td>readonly</td><td>Permite visualizar, mas não editar.</td></tr>
+        <tr><td>disabled</td><td>Desativa o campo.</td></tr>
+        <tr><td>size</td><td>Define tamanho visual de campo de texto.</td></tr>
+        <tr><td>maxlength</td><td>Limita a quantidade de caracteres.</td></tr>
+        <tr><td>min / max</td><td>Definem limites mínimo e máximo.</td></tr>
+        <tr><td>multiple</td><td>Permite múltiplos valores quando suportado.</td></tr>
+        <tr><td>placeholder</td><td>Mostra uma dica no campo vazio.</td></tr>
+        <tr><td>required</td><td>Exige preenchimento.</td></tr>
+        <tr><td>autofocus</td><td>Coloca o foco inicial no campo.</td></tr>
+    </table>
+
+    <p><a href="index.html">Voltar para o início</a></p>
+</body>
+</html>

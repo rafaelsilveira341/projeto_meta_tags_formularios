@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de Formulário I</title>
+</head>
+<body>
+    <!--
+        PARTE C - ELEMENTOS DE FORMULÁRIO HTML
+
+        Os exemplos abaixo demonstram:
+        color, date, datetime-local, email, file, hidden e image.
+    -->
+
+    <h1>Elementos de Formulário HTML - Parte C</h1>
+
+    <form action="#" method="post">
+
+        <!--
+            color:
+            Permite que o usuário selecione uma cor.
+            Valor enviado: geralmente uma representação hexadecimal.
+        -->
+        <label for="cor">Escolha uma cor:</label>
+        <input type="color" id="cor" name="cor" value="#3366cc">
+        <br><br>
+
+        <!--
+            date:
+            Permite selecionar uma data.
+            Propriedades comuns: min, max, value.
+        -->
+        <label for="data">Data:</label>
+        <input type="date" id="data" name="data">
+        <br><br>
+
+        <!--
+            datetime-local:
+            Permite selecionar data e horário local, sem informação de fuso horário.
+            Propriedades comuns: min, max, step e value.
+        -->
+        <label for="datahora">Data e horário:</label>
+        <input type="datetime-local" id="datahora" name="datahora">
+        <br><br>
+
+        <!--
+            email:
+            Campo destinado ao preenchimento de endereço de e-mail.
+            O navegador pode realizar validação básica do formato.
+            Propriedades comuns: required, placeholder, multiple, maxlength.
+        -->
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email"
+               placeholder="exemplo@email.com" required>
+        <br><br>
+
+        <!--
+            file:
+            Permite selecionar arquivo(s) do dispositivo.
+            Propriedades comuns: accept e multiple.
+        -->
+        <label for="arquivo">Selecione um arquivo:</label>
+        <input type="file" id="arquivo" name="arquivo"
+               accept=".pdf,.jpg,.png">
+        <br><br>
+
+        <!--
+            hidden:
+            Campo invisível na página, utilizado para enviar um valor
+            junto com os demais dados do formulário.
+            Não é destinado a dados secretos ou senhas.
+        -->
+        <input type="hidden" name="codigo" value="12345">
+
+        <!--
+            image:
+            Cria um botão de envio usando uma imagem.
+            As coordenadas do clique podem ser enviadas pelo formulário.
+        -->
+        <input type="image"
+               src="https://via.placeholder.com/120x40.png?text=Enviar"
+               alt="Enviar formulário"
+               width="120"
+               height="40">
+
+    </form>
+
+    <h2>Resumo</h2>
+    <ul>
+        <li><strong>color:</strong> seleção de cor.</li>
+        <li><strong>date:</strong> seleção de data.</li>
+        <li><strong>datetime-local:</strong> data e horário local.</li>
+        <li><strong>email:</strong> endereço de e-mail.</li>
+        <li><strong>file:</strong> seleção de arquivo.</li>
+        <li><strong>hidden:</strong> valor oculto enviado com o formulário.</li>
+        <li><strong>image:</strong> botão de envio representado por imagem.</li>
+    </ul>
+
+    <p><a href="index.html">Voltar para o início</a></p>
+</body>
+</html>

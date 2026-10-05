@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de Formulário II</title>
+</head>
+<body>
+    <!--
+        PARTE D - ELEMENTOS DE FORMULÁRIO HTML
+
+        Os exemplos abaixo demonstram:
+        month, number, range, search, tel, time, url e week.
+    -->
+
+    <h1>Elementos de Formulário HTML - Parte D</h1>
+
+    <form action="#" method="get">
+
+        <!--
+            month:
+            Permite selecionar mês e ano.
+            Propriedades comuns: min, max, value e step.
+        -->
+        <label for="mes">Mês:</label>
+        <input type="month" id="mes" name="mes">
+        <br><br>
+
+        <!--
+            number:
+            Permite informar um valor numérico.
+            Propriedades comuns: min, max, step e value.
+        -->
+        <label for="idade">Idade:</label>
+        <input type="number" id="idade" name="idade"
+               min="0" max="120" step="1">
+        <br><br>
+
+        <!--
+            range:
+            Cria um controle deslizante para escolher um valor dentro
+            de um intervalo.
+            Propriedades comuns: min, max, step e value.
+        -->
+        <label for="volume">Volume:</label>
+        <input type="range" id="volume" name="volume"
+               min="0" max="100" step="10" value="50">
+        <br><br>
+
+        <!--
+            search:
+            Campo destinado a pesquisas.
+            Visualmente pode ser semelhante a um campo de texto, mas
+            representa semanticamente uma pesquisa.
+        -->
+        <label for="pesquisa">Pesquisar:</label>
+        <input type="search" id="pesquisa" name="pesquisa"
+               placeholder="Digite sua pesquisa">
+        <br><br>
+
+        <!--
+            tel:
+            Campo destinado a números de telefone.
+            O navegador pode mostrar um teclado numérico em dispositivos móveis.
+            Não garante, sozinho, uma validação de telefone.
+        -->
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone"
+               placeholder="(00) 00000-0000">
+        <br><br>
+
+        <!--
+            time:
+            Permite selecionar um horário.
+            Propriedades comuns: min, max, step e value.
+        -->
+        <label for="horario">Horário:</label>
+        <input type="time" id="horario" name="horario">
+        <br><br>
+
+        <!--
+            url:
+            Campo destinado a endereços de páginas da internet.
+            O navegador pode fazer uma validação básica do formato.
+        -->
+        <label for="site">Site:</label>
+        <input type="url" id="site" name="site"
+               placeholder="https://exemplo.com">
+        <br><br>
+
+        <!--
+            week:
+            Permite selecionar uma semana e um ano.
+            Propriedades comuns: min, max, step e value.
+        -->
+        <label for="semana">Semana:</label>
+        <input type="week" id="semana" name="semana">
+        <br><br>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <h2>Resumo</h2>
+    <ul>
+        <li><strong>month:</strong> mês e ano.</li>
+        <li><strong>number:</strong> número.</li>
+        <li><strong>range:</strong> intervalo por controle deslizante.</li>
+        <li><strong>search:</strong> pesquisa.</li>
+        <li><strong>tel:</strong> telefone.</li>
+        <li><strong>time:</strong> horário.</li>
+        <li><strong>url:</strong> endereço de URL.</li>
+        <li><strong>week:</strong> semana e ano.</li>
+    </ul>
+
+    <p><a href="index.html">Voltar para o início</a></p>
+</body>
+</html>
